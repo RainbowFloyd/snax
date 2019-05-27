@@ -12,6 +12,9 @@ class App extends Component {
           <h2>Welcome to SNAX</h2>
           <h3>WIP</h3>
         </div>
+        <div>
+          <Navbar />
+        </div>
         <p className="App-intro">
           <h2>Please check back for updates</h2>
         </p>
