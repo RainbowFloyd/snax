@@ -1,5 +1,5 @@
 import React from 'react';
-import NavbarItem from './NavbarItem/NavbarItem';
+import NavbarItem from './NavbarItem';
 
 const Navbar = (props) => {
 	const tabs = ['Home', 'Menu', 'Discounts', 'History', 'Connect'];
