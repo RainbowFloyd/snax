@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import logo from './../public/snax_logo.png';
 import './App.css';
+import Navbar from './Components/Navbar/Navbar';
 
 class App extends Component {
   render() {
