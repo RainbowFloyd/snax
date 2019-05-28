@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import logo from './../public/snax_logo.png';
 import './App.css';
+import { Route } from 'react-router-dom';
 
 // Navbar Components
 import Navbar from './Components/Navbar/Navbar';
@@ -20,6 +21,11 @@ class App extends Component {
         </div>
         <div>
           <Navbar />
+          <Route path='/' exact component={Menu} />
+          <Route path='/menu' component={Menu} /> 
+          <Route path='/history' component={History} />
+          <Route path='/discounts' component={Discounts} />
+          <Route path='/connect' component={Connect} />
         </div>
         <p className="App-intro">
           <h2>Please check back for updates</h2>
