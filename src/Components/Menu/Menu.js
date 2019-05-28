@@ -1,4 +1,5 @@
 import React from 'react';
+import './Menu.css'
 
 const icecreams = {
 	chocolate: {
@@ -54,7 +55,11 @@ const icecreams = {
 const Menu = (props) => {
 	const icecreamsList = (
 		Object.keys(icecreams).map((icecream, index) => {
-			return <li>{icecream}</li>
+			//return <li>{icecream}</li>
+			return (
+				<div className="icecream-picture">
+				</div>
+			)
 		})
 	)
 
