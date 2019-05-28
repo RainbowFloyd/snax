@@ -1,6 +1,6 @@
 import React from 'react';
 
-const icecream = {
+const icecreams = {
 	chocolate: {
 		desciption: ''
 	},
@@ -52,7 +52,18 @@ const icecream = {
 }
 
 const Menu = (props) => {
-	return <h1>Menu</h1>
+	const icecreamsList = (
+		Object.keys(icecreams).map((icecream, index) => {
+			return <li>{icecream}</li>
+		})
+	)
+
+	return (
+		<ul>
+			{icecreamsList}
+		</ul>
+		)
+
 }
 
 export default Menu;
