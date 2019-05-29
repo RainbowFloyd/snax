@@ -57,7 +57,12 @@ const Menu = (props) => {
 		Object.keys(icecreams).map((icecream, index) => {
 			//return <li>{icecream}</li>
 			return (
-				<div className="icecream-picture">
+				<div>
+					<div className="icecream-picture">
+					</div>
+					<div className="icecream-name">
+						{icecream}
+					</div>	
 				</div>
 			)
 		})
