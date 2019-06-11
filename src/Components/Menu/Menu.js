@@ -53,21 +53,36 @@ const icecreams = {
 }
 
 const Menu = (props) => {
+
+	const formatIcecreams = () => {
+		let grid = {};
+		let row = 0;
+		Object.keys(icecreams).map((icecream, index) => {
+			if (grid[row] === undefined) {
+				grid[row] = []
+			}
+			if (index % 4 === 0) {
+				row++
+			}
+		})
+		console.log(grid)
+	}
+
 	const icecreamsList = (
 		Object.keys(icecreams).map((icecream, index) => {
-			//return <li>{icecream}</li>
 			return (
 				<div>
 					<div className="icecream-picture">
 					</div>
 					<div className="icecream-name">
 						{icecream}
-					</div>	
+					</div>
 				</div>
 			)
 		})
 	)
 
+	formatIcecreams()
 	return (
 		<ul>
 			{icecreamsList}
