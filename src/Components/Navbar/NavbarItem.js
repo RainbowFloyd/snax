@@ -6,9 +6,9 @@ const NavbarItem = (props) => {
   const tabRefernce = tabName === 'Home' ? '' : tabName.toLowerCase();
 
 	return (
-		<span>
-	    <button><Link to={'/' + tabRefernce}>{tabName}</Link></button>
-		</span>
+		<nav>
+	    <ul><Link to={'/' + tabRefernce}>{tabName}</Link></ul>
+		</nav>
 	)
 }
 
